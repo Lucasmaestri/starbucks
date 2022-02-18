@@ -311,7 +311,7 @@ footer {
 }
 /* MEDIA PARA TABLET */
 
-@media (min-width: 427px) and (max-width: 768px) {
+@media (min-width: 426px) and (max-width: 768px) {
     .container {
         padding: 0px 20px;
     }
@@ -329,21 +329,26 @@ footer {
     }
     
 }
-@media (max-width: 426px) {
+@media (max-width: 425px) {
+    
+    .header--search input {
+        max-width: 120px;
+    }
     .banner-area h1 {
-        font-size: 70px;
+        font-size: 50px;
     }
     .banner--img {
         display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        margin: 10px 0px;
+        padding: 50px;
+        flex-wrap: wrap;
     }
     .banner--img img {
         margin: 20px 0px;
-        width: 200px;
-        height: 200px;
+        width: 150px;
+        height: 150px;
+    }
+    .banner-area span {
+        padding-right: 70px;
     }
 
 }
