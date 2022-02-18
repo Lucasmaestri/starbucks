@@ -63,7 +63,7 @@ header .line {
     height: 16px;    
 }
 .header--menu {
-    margin-left: 50px;
+    padding: 0px 30px;
     cursor: pointer;
 }
 
@@ -76,7 +76,7 @@ header .line {
 
 .banner {
     background-image: url(../images/bg.jpg);
-    background-position-y: -70px;
+    background-position: center;
     background-size: cover;
 }
 .banner-area {
@@ -290,12 +290,33 @@ header .line {
     height: 500px;
     max-height: 100%;
 }
-.name {
+footer {
     background-color: rgb(41, 41, 41);
     height: 50px;
 }
 .programador {
+    max-width: 100%;
     color: #9b9b9b;
     font-size: 14px;
-    padding: 15px 0px;
+    padding: 15px 100px;
+}
+
+/* RESPOSIVIDADE */
+
+@media(max-width: 1140px){
+    .container {
+        padding: 0px 20px;
+    }
+    .header--menu {
+        padding-right: 40px;
+    }
+    .area1 {
+        grid-template-columns: 3fr 2fr;
+    }
+    .area2 {
+        grid-template-columns: 2fr 3fr;
+    }
+    .area3 {
+        grid-template-columns: 3fr 2fr;
+    }
 }
