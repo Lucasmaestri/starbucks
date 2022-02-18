@@ -307,8 +307,16 @@ footer {
     .container {
         padding: 0px 20px;
     }
+    
+}
+/* MEDIA PARA TABLET */
+
+@media (min-width: 427px) and (max-width: 768px) {
+    .container {
+        padding: 0px 20px;
+    }
     .header--menu {
-        padding-right: 40px;
+        padding-right: 100px;
     }
     .area1 {
         grid-template-columns: 3fr 2fr;
@@ -319,4 +327,23 @@ footer {
     .area3 {
         grid-template-columns: 3fr 2fr;
     }
+    
+}
+@media (max-width: 426px) {
+    .banner-area h1 {
+        font-size: 70px;
+    }
+    .banner--img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 10px 0px;
+    }
+    .banner--img img {
+        margin: 20px 0px;
+        width: 200px;
+        height: 200px;
+    }
+
 }
